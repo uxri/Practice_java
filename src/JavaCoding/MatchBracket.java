@@ -1,7 +1,5 @@
 package JavaCoding;
 
-import java.util.Scanner;
-
 public class MatchBracket {
     public static void main(String[] args) {
 //        Scanner scanner = new Scanner(System.in);
