@@ -1,10 +1,11 @@
 package JavaCoding;
 
+import java.util.Scanner;
+
 public class MatchBracket {
     public static void main(String[] args) {
-//        Scanner scanner = new Scanner(System.in);
-//        String a = scanner.nextLine();
-        String a = "(2+3(4+5))";
+        Scanner scanner = new Scanner(System.in);
+        String a = scanner.nextLine();
 
         char[] arr = a.toCharArray();
         int opencount = 0;
