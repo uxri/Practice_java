@@ -2,12 +2,26 @@ package JavaCoding;
 
 public class Practice {
     public static void main(String[] args) {
-        String a = "yuree";
-        String reverse = "";
+        String a = "(2+3(4*5))";
 
-        for (int i = a.length() - 1; i >= 0; i--) {
-            reverse = reverse + a.charAt(i);
+        char[] arr = a.toCharArray();
+
+        int open = 0;
+        int close = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == '(') {
+                open++;
+            }
+            if (arr[i] == ')') {
+                close++;
+            }
         }
-        System.out.println("reverse is : " + reverse);
+
+        if (open == close) {
+            System.out.println("vaild");
+        } else {
+            System.out.println("invalid");
+        }
     }
 }
