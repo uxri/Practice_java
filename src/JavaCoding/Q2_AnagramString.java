@@ -3,23 +3,22 @@ package JavaCoding;
 import java.util.Arrays;
 
 public class Q2_AnagramString {
-    public static void main(String[] args) {
+    public static void main(String[] args){
         String word = "yuree";
-        String anagram = "eeyur";
+        String anagram = "eyur";
 
-        System.out.println("Word and Anagram is :" + anagramStringSort(word, anagram));
+        System.out.println("word and anagram is : " + measureWord(word, anagram));
     }
-
-    public static Boolean anagramStringSort(String word, String anagram){
-        String sortWord = sortChars(word);
-        String sortAnagram = sortChars(anagram);
-
-        return sortWord.equals(sortAnagram);
-    }
-
-    public static String sortChars(String word) {
+    public static String sortWord(String word){
         char[] wordArr = word.toLowerCase().toCharArray();
         Arrays.sort(wordArr);
         return String.valueOf(wordArr);
+    }
+
+    public static Boolean measureWord(String word, String anagram){
+        String sortWord = sortWord(word);
+        String sortArr = sortWord(anagram);
+
+        return sortWord.equals(sortArr);
     }
 }
