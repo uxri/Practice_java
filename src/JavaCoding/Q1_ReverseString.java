@@ -6,9 +6,10 @@ public class Q1_ReverseString {
         String reverse = "";
 
         char[] arr = word.toCharArray();
-        for (int i = arr.length - 1; i >= 0; i--) {
-            reverse += word.charAt(i);
+        for (int i=arr.length-1; i>=0; i--){
+            reverse += arr[i];
         }
+
         System.out.println(reverse);
     }
 }
