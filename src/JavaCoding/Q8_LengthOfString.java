@@ -9,7 +9,8 @@ public class Q8_LengthOfString {
     public static int getLengthOfStringWithCharArray(String helloWorld) {
         int length = 0;
         char[] arr = helloWorld.toCharArray();
-        for (char c : arr) { //arr에 있는 걸 하나씩 c에 담을 때마다 length가 하나씩 늘어남.
+
+        for (char c : arr) {
             length++;
         }
         return length;

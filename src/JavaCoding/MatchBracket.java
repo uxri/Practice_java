@@ -2,25 +2,23 @@ package JavaCoding;
 
 public class MatchBracket {
     public static void main(String[] args) {
-//        Scanner scanner = new Scanner(System.in);
-//        String a = scanner.nextLine();
-        String a = "(2+3(4+5))";
+        String bracket = "(((2+3)-4)*)5)";
 
-        char[] arr = a.toCharArray();
-        int opencount = 0;
-        int closecount = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == '(') {
-                opencount++;
+        char[] arr = bracket.toCharArray();
+        int open =0;
+        int close =0;
+        for (int i=0; i<arr.length; i++){
+            if(arr[i] == '('){
+                open++;
             }
-            if (arr[i] == ')') {
-                closecount++;
+            if(arr[i] ==')'){
+                close++;
             }
         }
-        if (opencount == closecount) {
-            System.out.print("valid");
-        } else {
-            System.out.print("invalid");
+        if (open == close){
+            System.out.println(true);
         }
+        else
+            System.out.println(false);
     }
 }

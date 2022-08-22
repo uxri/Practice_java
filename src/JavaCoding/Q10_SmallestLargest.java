@@ -8,9 +8,10 @@ public class Q10_SmallestLargest {
         int largest = arr[0];
 
         for (int i=0; i<arr.length; i++){
-            if( smallest>arr[i]) {
+            if (smallest>arr[i]){
                 smallest = arr[i];
-            } else if (largest<arr[i]) {
+            }
+            else if (largest<arr[i]){
                 largest = arr[i];
             }
         }
