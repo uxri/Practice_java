@@ -14,8 +14,9 @@ public class Q3_UniqueChar {
 
         for (int i = 0; i < word.length(); i++) {
             char c = word.charAt(i);
-            if (!set.add(c))
+            if (!set.add(c)) {
                 return false;
+            }
         }
         return true;
     }
