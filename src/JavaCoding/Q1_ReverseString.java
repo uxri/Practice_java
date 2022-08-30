@@ -9,6 +9,7 @@ public class Q1_ReverseString {
         for (int i=arr.length-1; i>=0; i--){
             reverse += arr[i];
         }
+        word.to
 
         System.out.println(reverse);
     }
